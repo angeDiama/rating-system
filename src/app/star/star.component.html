@@ -1,0 +1,8 @@
+<svg
+  [ngClass]="{'star-rating': rating >= starId, 'no-rating':rating < starId}"
+  (mouseleave)="onStarLeave()"
+  (mouseover)="onStarHover()"
+  (click)="onStarClicked()"
+  height="58" width="55" data-rating="1">
+  <polygon stroke-width="0" points="9.9, 1.1 , 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"></polygon>
+</svg>
